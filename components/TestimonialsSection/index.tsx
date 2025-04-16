@@ -51,8 +51,8 @@ const TestimonialsSection = () => {
                 </span>
               ))}
             </div>
-            <blockquote className="text-lg text-white mb-6 flex-grow">
-              "{testimonial.quote}"
+            <blockquote className="text-lg text-white mb-6 italic flex-grow">
+              &quot;{testimonial.quote}&quot;
             </blockquote>
             <div className="mt-auto">
               <div className="flex items-center">

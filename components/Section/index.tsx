@@ -21,7 +21,6 @@ const Section = ({
   bgImage,
   overlayColor = "bg-black/70",
   className = "",
-  height = "80",
   minHeight = "500px",
   contentClassName = "",
   parallaxIntensity = 0.3,

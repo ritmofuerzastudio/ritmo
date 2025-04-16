@@ -5,7 +5,6 @@ import DanceCardsGrid from "@/components/DanceCardsGrid";
 import InstructorsSection from "@/components/InstructorsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import FreeClassSection from "@/components/FreeClassSection";
-import FreeClassModal from "@/components/FreeClassModal";
 import hero1 from "@/img/hero1.jpg";
 import hero2 from "@/img/hero2.jpg";
 import hero3 from "@/img/hero3.jpg";

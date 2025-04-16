@@ -42,7 +42,7 @@ const FreeClassForm = ({ onSuccess }: { onSuccess?: () => void }) => {
         interest: "",
       });
     } catch (err) {
-      setError("Ocurrió un error al enviar el formulario");
+      setError("Ocurrió un error al enviar el formulario: " + err);
     } finally {
       setIsSubmitting(false);
     }
