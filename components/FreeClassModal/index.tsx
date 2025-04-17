@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import FreeClassForm from "@/components/FreeClassForm";
 
-const FreeClassModal = () => {
+const FreeClassModal = ({ className = "block" }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleSuccess = () => {
@@ -13,7 +13,7 @@ const FreeClassModal = () => {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="px-4 py-2 text-lg md:text-xl bg-[#AE6B56] rounded-4xl text-white uppercase font-semibold hover:bg-[#AE6B56]/80 transition duration-300 ease-in-out cursor-pointer"
+        className={`${className} px-4 py-2 text-lg md:text-xl bg-[#AE6B56] rounded-4xl text-white uppercase font-semibold hover:bg-[#AE6B56]/80 transition duration-300 ease-in-out cursor-pointer`}
       >
         Clase Gratis
       </button>

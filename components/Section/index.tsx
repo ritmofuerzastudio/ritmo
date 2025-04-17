@@ -67,7 +67,7 @@ const Section = ({
     <section
       ref={sectionRef}
       className={`relative w-full flex items-center justify-center overflow-hidden transition-opacity duration-700 h-auto md:h-[85vh] ${className} ${
-        isVisible ? "opacity-100" : "opacity-20"
+        isVisible ? "opacity-100" : "opacity-100"
       }`}
       style={{
         minHeight,

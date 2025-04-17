@@ -33,7 +33,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="flex flex-col items-center md:items-start">
             <h4 className="text-lg font-semibold mb-4">Clase Gratis</h4>
             <p className="text-[#AE6B56] mb-4">
               ¿Listo para comenzar? Reserva tu clase de prueba hoy mismo.

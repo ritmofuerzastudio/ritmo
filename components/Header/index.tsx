@@ -67,7 +67,7 @@ const Header = () => {
             <NavBar elements={elements} />
           </div>
         </div>
-        <FreeClassModal />
+        <FreeClassModal className="hidden md:block" />
 
         {/* Burger icon mobile */}
         <button

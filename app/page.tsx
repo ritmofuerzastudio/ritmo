@@ -12,7 +12,7 @@ import hero4 from "@/img/hero4.jpg";
 
 export default function Home() {
   return (
-    <div className="">
+    <>
       <Header />
       <main className="flex flex-col">
         <Section
@@ -76,6 +76,6 @@ export default function Home() {
         <FreeClassSection />
         <Footer />
       </main>
-    </div>
+    </>
   );
 }
