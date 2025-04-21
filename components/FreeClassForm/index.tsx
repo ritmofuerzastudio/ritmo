@@ -1,7 +1,10 @@
 "use client";
 import React, { useState } from "react";
 
-const FreeClassForm = () => {
+const FreeClassForm = ({ onSuccess }: { onSuccess: () => void }) => {
+  if (!onSuccess) {
+    throw new Error("onSuccess prop is required");
+  }
   const [formData, setFormData] = useState({
     name: "",
     email: "",
