@@ -1,4 +1,6 @@
+"use client";
 import React, { useState } from "react";
+import { prisma } from "@/app/libs/prisma";
 
 const FreeClassForm = ({ onSuccess }: { onSuccess?: () => void }) => {
   const [formData, setFormData] = useState({
@@ -9,6 +11,7 @@ const FreeClassForm = ({ onSuccess }: { onSuccess?: () => void }) => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -30,11 +33,19 @@ const FreeClassForm = ({ onSuccess }: { onSuccess?: () => void }) => {
     }
 
     try {
-      // Aquí iría la llamada a tu API
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      const response = await fetch("/api/free-class", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-      if (onSuccess) onSuccess();
-      // Reset form
+      if (!response.ok) {
+        throw new Error("Error al enviar el formulario");
+      }
+
+      setSuccess(true);
       setFormData({
         name: "",
         email: "",
@@ -42,7 +53,7 @@ const FreeClassForm = ({ onSuccess }: { onSuccess?: () => void }) => {
         interest: "",
       });
     } catch (err) {
-      setError("Ocurrió un error al enviar el formulario: " + err);
+      setError("Ocurrió un error al enviar el formulario");
     } finally {
       setIsSubmitting(false);
     }
@@ -57,6 +68,12 @@ const FreeClassForm = ({ onSuccess }: { onSuccess?: () => void }) => {
         Completa el formulario y nos pondremos en contacto para coordinar tu
         clase de prueba.
       </p>
+      {success && (
+        <div className="mb-4 p-3 bg-green-100 border border-green-400 text-green-700 rounded">
+          ¡Gracias! Tu solicitud ha sido enviada. Nos pondremos en contacto
+          pronto.
+        </div>
+      )}
 
       {error && (
         <div className="mb-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded">
