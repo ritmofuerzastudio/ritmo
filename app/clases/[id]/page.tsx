@@ -2,11 +2,17 @@ import React from "react";
 import Link from "next/link";
 import classesData from "@/data/classes.json";
 
-const ClassDetailPage = ({ params }: { params: { id: string } }) => {
+const ClassDetailPage = async ({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) => {
   // Buscar la clase en todos los datos
+  const { id } = await params;
+
   let selectedClass = null;
   for (const category of classesData.categories) {
-    selectedClass = category.classes.find((cls) => cls.id === params.id);
+    selectedClass = category.classes.find((cls) => cls.id === id);
     if (selectedClass) break;
   }
 

@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { prisma } from "@/app/libs/prisma";
 
 const FreeClassForm = ({ onSuccess }: { onSuccess?: () => void }) => {
   const [formData, setFormData] = useState({
@@ -13,6 +12,9 @@ const FreeClassForm = ({ onSuccess }: { onSuccess?: () => void }) => {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
 
+  if (onSuccess) {
+    console.log("onSuccess prop is passed");
+  }
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ) => {
@@ -53,7 +55,7 @@ const FreeClassForm = ({ onSuccess }: { onSuccess?: () => void }) => {
         interest: "",
       });
     } catch (err) {
-      setError("Ocurrió un error al enviar el formulario");
+      setError("Ocurrió un error al enviar el formulario:" + err);
     } finally {
       setIsSubmitting(false);
     }
