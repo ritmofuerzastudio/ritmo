@@ -2,7 +2,17 @@ import React from "react";
 import Link from "next/link";
 import classesData from "@/data/classes.json";
 
-const ClassDetailPage = ({ params }: { params: { id: string } }) => {
+// Define el tipo para los parámetros de la ruta
+interface PageParams {
+  params: {
+    id: string;
+  };
+  searchParams?: {
+    [key: string]: string | string[] | undefined;
+  };
+}
+
+const ClassDetailPage = ({ params }: PageParams) => {
   // Buscar la clase en todos los datos
   let selectedClass = null;
   for (const category of classesData.categories) {
