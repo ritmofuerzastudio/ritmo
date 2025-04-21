@@ -4,7 +4,6 @@ import FreeClassSection from "@/components/FreeClassSection";
 import Section from "@/components/Section";
 import Costos from "@/img/costos.jpg";
 import pricingData from "@/data/pricing.json";
-import Link from "next/link";
 
 export default function PricingPage() {
   return (

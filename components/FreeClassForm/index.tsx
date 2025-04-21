@@ -1,8 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { prisma } from "@/app/libs/prisma";
 
-const FreeClassForm = ({ onSuccess }: { onSuccess?: () => void }) => {
+const FreeClassForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -53,7 +52,7 @@ const FreeClassForm = ({ onSuccess }: { onSuccess?: () => void }) => {
         interest: "",
       });
     } catch (err) {
-      setError("Ocurrió un error al enviar el formulario");
+      setError("Ocurrió un error al enviar el formulario" + err);
     } finally {
       setIsSubmitting(false);
     }
