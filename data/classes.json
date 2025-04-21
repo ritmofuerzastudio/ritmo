@@ -1,0 +1,54 @@
+{
+  "categories": [
+    {
+      "name": "Baile",
+      "classes": [
+        {
+          "id": "salsa",
+          "title": "Salsa",
+          "description": "Aprende los ritmos caribeños con nuestros instructores certificados",
+          "image": "/images/classes/placeholder.svg",
+          "duration": "1 hora",
+          "level": "Todos los niveles"
+        },
+        {
+          "id": "bachata",
+          "title": "Bachata",
+          "description": "Domina este sensual ritmo dominicano",
+          "image": "/images/classes/placeholder.svg",
+          "duration": "1 hora",
+          "level": "Principiantes/Intermedios"
+        },
+        {
+          "id": "contemporaneo",
+          "title": "Contemporáneo",
+          "description": "Expresión corporal y técnica moderna",
+          "image": "/images/classes/placeholder.svg",
+          "duration": "1.5 horas",
+          "level": "Intermedios/Avanzados"
+        }
+      ]
+    },
+    {
+      "name": "Kickboxing",
+      "classes": [
+        {
+          "id": "kickboxing-basico",
+          "title": "Kickboxing Básico",
+          "description": "Fundamentos de técnica y defensa personal",
+          "image": "/images/classes/placeholder.svg",
+          "duration": "1 hora",
+          "level": "Principiantes"
+        },
+        {
+          "id": "kickboxing-avanzado",
+          "title": "Kickboxing Avanzado",
+          "description": "Entrenamiento de combate y condición física",
+          "image": "/images/classes/placeholder.svg",
+          "duration": "1.5 horas",
+          "level": "Intermedios/Avanzados"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "pricing": [
+    {
+      "id": "guitarra",
+      "title": "Guitarra Acústica/Eléctrica",
+      "individual": {
+        "price": 1200,
+        "duration": "1 hora",
+        "age": "6 años"
+      },
+      "group": {
+        "price": 900,
+        "duration": "1 hora",
+        "capacity": 3,
+        "age": "6 años"
+      }
+    },
+    {
+      "id": "piano",
+      "title": "Piano",
+      "individual": {
+        "price": 1300,
+        "duration": "1 hora",
+        "age": "5 años"
+      },
+      "group": null
+    },
+    {
+      "id": "canto",
+      "title": "Canto",
+      "individual": {
+        "price": 1200,
+        "duration": "1 hora",
+        "age": "6 años"
+      },
+      "group": {
+        "price": 900,
+        "duration": "1 hora",
+        "capacity": 3,
+        "age": "6 años"
+      }
+    },
+    {
+      "id": "bateria",
+      "title": "Batería",
+      "individual": {
+        "price": 1300,
+        "duration": "1 hora",
+        "age": "5 años"
+      },
+      "group": null
+    },
+    {
+      "id": "arte",
+      "title": "Dibujo y Pintura",
+      "individual": {
+        "price": 1200,
+        "duration": "1 hora",
+        "age": "5 años"
+      },
+      "group": {
+        "price": 1200,
+        "duration": "2 horas",
+        "capacity": 5,
+        "age": "5 años"
+      }
+    },
+    {
+      "id": "bajo",
+      "title": "Bajo",
+      "individual": {
+        "price": 1200,
+        "duration": "1 hora",
+        "age": "9 años"
+      },
+      "group": {
+        "price": 900,
+        "duration": "1 hora",
+        "capacity": 3,
+        "age": "9 años"
+      }
+    }
+  ],
+  "specialOffer": {
+    "description": "Inscríbete el mismo día de tu clase muestra y paga solo",
+    "price": 500,
+    "note": "Oferta válida por tiempo limitado"
+  }
+}
