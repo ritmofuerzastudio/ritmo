@@ -1,10 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-const FreeClassForm = ({ onSuccess }: { onSuccess: () => void }) => {
-  if (!onSuccess) {
-    throw new Error("onSuccess prop is required");
-  }
+const FreeClassForm = ({ onSuccess }: { onSuccess?: () => void }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -15,6 +12,9 @@ const FreeClassForm = ({ onSuccess }: { onSuccess: () => void }) => {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
 
+  if (onSuccess) {
+    console.log("onSuccess prop is passed");
+  }
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ) => {
@@ -55,7 +55,7 @@ const FreeClassForm = ({ onSuccess }: { onSuccess: () => void }) => {
         interest: "",
       });
     } catch (err) {
-      setError("Ocurrió un error al enviar el formulario" + err);
+      setError("Ocurrió un error al enviar el formulario:" + err);
     } finally {
       setIsSubmitting(false);
     }
