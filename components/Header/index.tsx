@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 import Logo from "@/img/logo.jpeg";
 import NavBar from "@/components/NavBar";
 import FreeClassModal from "@/components/FreeClassModal";
+import WhatsAppSectionButton from "../WhatsAppSectionButton";
 
 const elements: { label: string; href: string }[] = [
   { label: "Inicio", href: "/" },
@@ -67,7 +68,10 @@ const Header = () => {
             <NavBar elements={elements} />
           </div>
         </div>
-        <FreeClassModal className="hidden md:block" />
+        <WhatsAppSectionButton
+          text="Quiero mi clase gratis"
+          phoneNumber={process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || ""}
+        />
 
         {/* Burger icon mobile */}
         <button

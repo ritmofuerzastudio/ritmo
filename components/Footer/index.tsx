@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import FreeClassModal from "@/components/FreeClassModal";
+import WhatsAppSectionButton from "@/components/WhatsAppSectionButton";
 
 const Footer = () => {
   return (
@@ -27,9 +27,12 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contacto</h4>
             <ul className="space-y-2 text-[#AE6B56]">
-              <li>Av. Principal 123, Ciudad</li>
+              <li>
+                Av. Dr. Gustavo Baz 177-Tercer piso, Hacienda de Echegaray,
+                53300 Naucalpan de Juárez, Méx.
+              </li>
               <li>info@ritmoyfuerza.com</li>
-              <li>+1 234 567 890</li>
+              <li>{process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}</li>
             </ul>
           </div>
 
@@ -38,7 +41,11 @@ const Footer = () => {
             <p className="text-[#AE6B56] mb-4">
               ¿Listo para comenzar? Reserva tu clase de prueba hoy mismo.
             </p>
-            <FreeClassModal />
+            <WhatsAppSectionButton
+              text="Reserva ahora"
+              phoneNumber={process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || ""}
+              className="mt-4"
+            />
           </div>
         </div>
 
@@ -48,7 +55,10 @@ const Footer = () => {
             derechos reservados.
           </p>
           <div className="flex space-x-6">
-            <a href="#" className="text-[#AE6B56] hover:text-white">
+            <a
+              href="https://www.facebook.com/profile.php?id=61573466496408"
+              className="text-[#AE6B56] hover:text-white"
+            >
               <span className="sr-only">Facebook</span>
               <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                 <path
@@ -58,7 +68,10 @@ const Footer = () => {
                 />
               </svg>
             </a>
-            <a href="#" className="text-[#AE6B56] hover:text-white">
+            <a
+              href="https://www.instagram.com/ritmo_fuerza"
+              className="text-[#AE6B56] hover:text-white"
+            >
               <span className="sr-only">Instagram</span>
               <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                 <path
@@ -68,14 +81,21 @@ const Footer = () => {
                 />
               </svg>
             </a>
-            <a href="#" className="text-[#AE6B56] hover:text-white">
-              <span className="sr-only">YouTube</span>
-              <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  fillRule="evenodd"
-                  d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z"
-                  clipRule="evenodd"
-                />
+            <a
+              href="https://www.tiktok.com/@ritmo_fuerza"
+              className="text-[#AE6B56] hover:text-white"
+            >
+              <span className="sr-only">TikTok</span>
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M10.68 9.57c-2.945-.142-4.992.908-6.14 3.15-1.724 3.362-.3 8.864 5.45 8.864 5.749 0 5.915-5.556 5.915-6.138V8.938c1.23.779 2.267 1.247 3.11 1.406.844.159 1.38.23 1.61.211V7.317c-.78-.094-1.456-.273-2.025-.538-.854-.397-2.548-1.498-2.548-3.113V2.417h-3.559c-.01 7.908-.01 12.251 0 13.03.016 1.166-.89 2.799-2.725 2.799-1.836 0-2.741-1.632-2.741-2.684a2.8 2.8 0 0 1 1.136-2.269c.542-.41 1.295-.573 2.516-.573V9.57Z"></path>
               </svg>
             </a>
           </div>
