@@ -5,7 +5,6 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import Logo from "@/img/logo.jpeg";
 import NavBar from "@/components/NavBar";
-import FreeClassModal from "@/components/FreeClassModal";
 import WhatsAppSectionButton from "../WhatsAppSectionButton";
 
 const elements: { label: string; href: string }[] = [
