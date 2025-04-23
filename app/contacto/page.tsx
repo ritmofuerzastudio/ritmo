@@ -58,13 +58,14 @@ const ContactPage = () => {
     {
       icon: <MapPin className="text-2xl text-amber-600" />,
       title: "Dirección",
-      content: "Av. Principal 123, Ciudad",
+      content:
+        "Av. Dr. Gustavo Baz 177-Tercer piso, Hacienda de Echegaray, 53300 Naucalpan de Juárez, Méx.",
     },
     {
       icon: <PhoneCall className="text-2xl text-amber-600" />,
       title: "Teléfono",
-      content: "+123 456 7890",
-      link: "tel:+1234567890",
+      content: "55 6875 6495",
+      link: "tel:5568756495",
     },
     {
       icon: <Mail className="text-2xl text-amber-600" />,
@@ -331,10 +332,16 @@ const ContactPage = () => {
 
                   <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
                     {/* Reemplaza con tu mapa embebido o componente de mapa */}
-                    <div className="w-full h-64 bg-gray-200 flex items-center justify-center">
-                      <p className="text-gray-500">
-                        Mapa de ubicación aparecerá aquí
-                      </p>
+                    <div className="w-full h-[450px] bg-gray-200 flex items-center justify-center">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.167995558388!2d-99.22799859999999!3d19.4914068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2037095191eb9%3A0x2524b795e836504c!2sRitmo%20y%20Fuerza%20Studio%20-%20Clases%20de%20Salsa%20Cubana%20y%20Baile%20Latino%20en%20Echegaray%2C%20Naucalpan!5e0!3m2!1ses-419!2smx!4v1745384656206!5m2!1ses-419!2smx"
+                        width="600"
+                        height="450"
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                      ></iframe>
                     </div>
                   </div>
                 </div>

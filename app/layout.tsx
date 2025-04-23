@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -114,7 +115,10 @@ export default function RootLayout({
       >
         {/* Header global podría ir aquí */}
 
-        <main className="min-h-screen">{children}</main>
+        <main className="min-h-screen">
+          {children}
+          <WhatsAppButton />
+        </main>
 
         {/* Footer global podría ir aquí */}
 

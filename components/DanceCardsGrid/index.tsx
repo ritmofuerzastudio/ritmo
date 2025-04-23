@@ -1,16 +1,37 @@
 import React from "react";
+import Image from "next/image";
+import baile from "@/img/baile.svg";
+import kickboxing from "@/img/kickboxing.svg";
+import instructor from "@/img/instructor.svg";
+import hora from "@/img/hora.svg";
 
 interface DanceCardProps {
   title: string;
   description: string;
   icon?: React.ReactNode;
+  size?: number;
 }
 
-const DanceCard: React.FC<DanceCardProps> = ({ title, description, icon }) => {
+const DanceCard: React.FC<DanceCardProps> = ({
+  title,
+  description,
+  icon,
+  size,
+}) => {
   return (
     <div className="flex flex-col items-center p-6 bg-[#F5CF82]/20 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm mx-4 my-4">
       <div className="mb-4 p-3 bg-gradient-to-r from-[#AE6B56] to-[#F5CF82] rounded-full text-white">
-        {icon || (
+        {icon ? (
+          <div className="h-8 w-8 relative flex items-center justify-center">
+            <Image
+              src={`${icon}`} // Agrega / para buscar desde la raíz
+              alt={title}
+              width={size || 27}
+              height={size || 27}
+              className="object-contain"
+            />
+          </div>
+        ) : (
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-8 w-8"
@@ -41,21 +62,27 @@ const DanceCardsGrid = () => {
       title: "Variedad de Bailes",
       description:
         "Desde salsa hasta contemporáneo, ofrecemos una amplia gama de estilos para todos los gustos.",
+      icon: baile.src,
+      size: 27,
     },
     {
       title: "Kickboxing",
       description:
         "Entrenamiento físico y mental con técnicas profesionales para principiantes y avanzados.",
+      icon: kickboxing.src,
     },
     {
       title: "Instructores Expertos",
       description:
         "Nuestro equipo de profesionales certificados te guiará en cada paso de tu aprendizaje.",
+      icon: instructor.src,
     },
     {
       title: "Horarios Flexibles",
       description:
         "Adaptamos nuestras clases a tu agenda con opciones mañana, tarde y noche.",
+      icon: hora.src,
+      size: 32,
     },
   ];
 
@@ -66,6 +93,8 @@ const DanceCardsGrid = () => {
           key={index}
           title={card.title}
           description={card.description}
+          icon={card.icon}
+          size={card.size}
         />
       ))}
     </div>
