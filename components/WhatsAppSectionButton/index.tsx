@@ -13,7 +13,7 @@ const WhatsAppSectionButton: React.FC<WhatsAppSectionButtonProps> = ({
 }) => {
   const handleClick = () => {
     const message = encodeURIComponent(
-      "Hola, estoy interesado en una clase gratis!"
+      "Hola, estoy interesado en sus clases. ¿Me podrían proporcionar más información?"
     );
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, "_blank");
@@ -22,7 +22,7 @@ const WhatsAppSectionButton: React.FC<WhatsAppSectionButtonProps> = ({
   return (
     <button
       onClick={handleClick}
-      className={`px-4 py-2 text-lg md:text-xl bg-[#AE6B56] rounded-4xl text-white uppercase font-semibold hover:bg-[#AE6B56]/80 transition duration-300 ease-in-out cursor-pointer flex items-center justify-center ${className}`}
+      className={`px-4 py-2 text-lg md:text-xl rounded-4xl uppercase font-semibold transition duration-300 ease-in-out cursor-pointer flex items-center justify-center ${className}`}
     >
       {icon && <span className="mr-2">{icon}</span>}
       {text}

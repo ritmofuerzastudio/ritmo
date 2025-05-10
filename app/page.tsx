@@ -13,51 +13,57 @@ import hero1 from "@/img/hero1.jpg";
 import hero2 from "@/img/hero2.jpg";
 import hero3 from "@/img/hero3.jpg";
 import hero4 from "@/img/hero4.jpg";
+import HeroCarousel from "@/components/common/HeroCarousel";
 
 export default function Home() {
+  const slides = [
+    {
+      imagePath: hero1.src,
+      title: "¡Bienvenido a Ritmo y Fuerza Studio!",
+      description:
+        "Donde el arte del baile se encuentra con la potencia del kickboxing.",
+    },
+    {
+      imagePath: hero2.src,
+      title: "Clases profesionales",
+      description: "Aprende con los mejores instructores certificados.",
+    },
+    {
+      imagePath: hero3.src,
+      title: "Horarios flexibles",
+      description: "Adaptamos nuestras clases a tu agenda.",
+    },
+  ];
+
   return (
     <>
       <Header />
       <main className="flex flex-col">
-        <Section
-          bgImage={hero1.src}
-          overlayColor="bg-[#F5CF82]/30"
-          contentClassName="flex flex-col items-center justify-center"
-        >
-          <h1 className="text-4xl md:text-6xl font-semibold text-white text-center uppercase">
-            ¡Bienvenido a Ritmo y Fuerza Studio!
-          </h1>
-          <p className="mt-2 text-center text-lg md:text-2xl text-white">
-            Donde el arte del baile se encuentra con la potencia del kickboxing.
-            Descubre una nueva forma de expresión y entrenamiento.
-          </p>
-          <WhatsAppSectionButton
-            text="Contáctanos"
-            phoneNumber={process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || ""}
-            className="mt-6"
-          />
-        </Section>
+        <HeroCarousel
+          slides={slides}
+          whatsappNumber={process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || ""}
+        />
         <Section
           bgImage={hero2.src}
-          overlayColor="bg-[#F5CF82]/30"
+          overlayColor="bg-secondary/30"
           height="120vh"
           contentClassName="flex flex-col items-center justify-center"
         >
           <h2 className="text-3xl md:text-4xl font-semibold text-white mt-6 mb-4">
             ¿Qué ofrecemos?
           </h2>
-          <div className="w-24 h-1 bg-[#F5CF82] mx-auto"></div>
+          <div className="w-24 h-1 bg-secondary mx-auto"></div>
           <DanceCardsGrid />
         </Section>
         <Section
           bgImage={hero3.src}
-          overlayColor="bg-[#F5CF82]/30"
+          overlayColor="bg-secondary/30"
           height="100vh"
           contentClassName="flex flex-col items-center justify-center"
         >
           <InstructorsSection />
         </Section>
-        <section className="flex flex-col w-full p-[2rem] items-center justify-center bg-[#F5CF82] h-[350px] md:h-[400px] text-[#AE6B56]">
+        <section className="flex flex-col w-full p-[2rem] items-center justify-center bg-secondary h-[350px] md:h-[400px] text-primary">
           <div className="flex flex-col items-center justify-center w-full md:w-2/3">
             <h2 className="text-3xl md:text-4xl text-center font-bold">
               ¿Listo para comenzar tu viaje?
@@ -68,7 +74,7 @@ export default function Home() {
             </p>
             <Link
               href="/clases"
-              className="mt-6 px-4 py-2 text-lg md:text-xl bg-[#AE6B56] rounded-4xl text-white uppercase font-semibold hover:bg-[#AE6B56]/80 transition duration-300 ease-in-out cursor-pointer"
+              className="mt-6 px-4 py-2 text-lg md:text-xl bg-primary rounded-4xl text-white uppercase font-semibold hover:bg-primary/80 transition duration-300 ease-in-out cursor-pointer"
             >
               Ver clases
             </Link>
@@ -76,7 +82,7 @@ export default function Home() {
         </section>
         <Section
           bgImage={hero4.src}
-          overlayColor="bg-[#F5CF82]/30"
+          overlayColor="bg-secondary/30"
           height="100vh"
           contentClassName="flex flex-col items-center justify-center"
         >

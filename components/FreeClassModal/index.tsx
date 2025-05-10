@@ -13,7 +13,7 @@ const FreeClassModal = ({ className = "block" }) => {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className={`${className} px-4 py-2 text-lg md:text-xl bg-[#AE6B56] rounded-4xl text-white uppercase font-semibold hover:bg-[#AE6B56]/80 transition duration-300 ease-in-out cursor-pointer`}
+        className={`${className} px-4 py-2 text-lg md:text-xl bg-primary rounded-4xl text-white uppercase font-semibold hover:bg-primary/80 transition duration-300 ease-in-out cursor-pointer`}
       >
         Clase Gratis
       </button>

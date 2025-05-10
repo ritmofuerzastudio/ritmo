@@ -9,8 +9,8 @@ import WhatsAppSectionButton from "../WhatsAppSectionButton";
 
 const elements: { label: string; href: string }[] = [
   { label: "Inicio", href: "/" },
-  { label: "Enseñanza", href: "/enseñanza" },
-  { label: "Clases", href: "/clases" },
+  { label: "Enseñanza", href: "/ensenanza" },
+  { label: "Blog", href: "/blog" },
   { label: "Costos", href: "/costos" },
   { label: "Contacto", href: "/contacto" },
 ];
@@ -22,7 +22,7 @@ const Header = () => {
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-[#F5CF82] text-black shadow-md">
+    <header className="sticky top-0 z-50 bg-secondary  text-black shadow-md">
       <div className="flex items-center justify-between w-full px-4 py-3 md:w-4/5 mx-auto">
         <Image
           src={Logo}
@@ -46,11 +46,11 @@ const Header = () => {
 
         {/* Sidebar animado */}
         <div
-          className={`fixed top-0 right-0 h-full w-3/4 bg-[#F5CF82] z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
+          className={`fixed top-0 right-0 h-full w-3/4 bg-secondary z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <div className="flex items-center justify-between px-4 py-4 border-b border-black/10">
+          <div className="flex items-center justify-between px-4 py-4 border-b border-primary">
             <Image
               src={Logo}
               alt="Logo"
@@ -58,7 +58,11 @@ const Header = () => {
               width={56}
               height={56}
             />
-            <button onClick={closeMenu}>
+            <h1 className="text-lg uppercase text-left ml-2 font-bold text-primary">
+              Ritmo y Fuerza Studio
+            </h1>
+            {/* Close button */}
+            <button onClick={closeMenu} className="text-primary">
               <X size={28} />
             </button>
           </div>
@@ -69,12 +73,13 @@ const Header = () => {
         </div>
         <WhatsAppSectionButton
           text="Quiero mi clase gratis"
+          className="hidden md:block bg-primary text-secondary hover:bg-primary/75"
           phoneNumber={process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || ""}
         />
 
         {/* Burger icon mobile */}
         <button
-          className="block md:hidden text-black"
+          className="block md:hidden text-primary"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >

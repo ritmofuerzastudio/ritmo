@@ -47,7 +47,7 @@ const InstructorsSection = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
           ¿Por qué elegir nuestros instructores?
         </h2>
-        <div className="w-24 h-1 bg-[#F5CF82] mx-auto"></div>
+        <div className="w-24 h-1 bg-secondary mx-auto"></div>
       </div>
 
       <div className="space-y-12">
@@ -56,7 +56,7 @@ const InstructorsSection = () => {
             key={index}
             className="flex flex-col md:flex-row items-center md:items-start gap-8 group text-center md:text-left"
           >
-            <div className="flex-shrink-0 relative w-16 h-16 rounded-full bg-[#F5CF82] flex items-center justify-center group-hover:bg-purple-200 transition-colors duration-300">
+            <div className="flex-shrink-0 relative w-16 h-16 rounded-full bg-secondary flex items-center justify-center group-hover:bg-purple-200 transition-colors duration-300">
               {feature.icon}
             </div>
             <div>

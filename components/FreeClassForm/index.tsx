@@ -62,11 +62,11 @@ const FreeClassForm = ({ onSuccess }: { onSuccess?: () => void }) => {
   };
 
   return (
-    <div className="max-w-md mx-auto bg-[#F5CF82] rounded-xl shadow-md overflow-hidden p-6">
-      <h3 className="text-2xl font-bold text-[#AE6B56] mb-4">
+    <div className="max-w-md mx-auto bg-secondary rounded-xl shadow-md overflow-hidden p-6">
+      <h3 className="text-2xl font-bold text-primary mb-4">
         Reserva tu Clase Gratis
       </h3>
-      <p className="text-[#AE6B56] mb-6">
+      <p className="text-primary mb-6">
         Completa el formulario y nos pondremos en contacto para coordinar tu
         clase de prueba.
       </p>
@@ -85,10 +85,7 @@ const FreeClassForm = ({ onSuccess }: { onSuccess?: () => void }) => {
 
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
-          <label
-            htmlFor="name"
-            className="block text-[#AE6B56] font-medium mb-2"
-          >
+          <label htmlFor="name" className="block text-primary font-medium mb-2">
             Nombre Completo *
           </label>
           <input
@@ -105,7 +102,7 @@ const FreeClassForm = ({ onSuccess }: { onSuccess?: () => void }) => {
         <div className="mb-4">
           <label
             htmlFor="email"
-            className="block text-[#AE6B56] font-medium mb-2"
+            className="block text-primary font-medium mb-2"
           >
             Email *
           </label>
@@ -123,7 +120,7 @@ const FreeClassForm = ({ onSuccess }: { onSuccess?: () => void }) => {
         <div className="mb-4">
           <label
             htmlFor="phone"
-            className="block text-[#AE6B56] font-medium mb-2"
+            className="block text-primary font-medium mb-2"
           >
             Teléfono
           </label>
@@ -140,7 +137,7 @@ const FreeClassForm = ({ onSuccess }: { onSuccess?: () => void }) => {
         <div className="mb-6">
           <label
             htmlFor="interest"
-            className="block text-[#AE6B56] font-medium mb-2"
+            className="block text-primary font-medium mb-2"
           >
             ¿Qué te interesa? *
           </label>
@@ -164,7 +161,7 @@ const FreeClassForm = ({ onSuccess }: { onSuccess?: () => void }) => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="px-4 py-2 text-lg md:text-xl bg-[#AE6B56] rounded-4xl text-white uppercase font-semibold hover:bg-[#AE6B56]/80 transition duration-300 ease-in-out cursor-pointer"
+          className="px-4 py-2 text-lg md:text-xl bg-primary rounded-4xl text-white uppercase font-semibold hover:bg-primary/80 transition duration-300 ease-in-out cursor-pointer"
         >
           {isSubmitting ? "Enviando..." : "Reservar"}
         </button>

@@ -34,7 +34,7 @@ const FreeClassSection = () => {
             <ul className="space-y-3 mb-8 text-center md:text-left flex flex-col items-center md:items-start uppercase">
               <li className="flex items-start">
                 <svg
-                  className="h-6 w-6 text-[#AE6B56] hidden md:block mr-2"
+                  className="h-6 w-6 text-primary hidden md:block mr-2"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -52,7 +52,7 @@ const FreeClassSection = () => {
               </li>
               <li className="flex items-start">
                 <svg
-                  className="h-6 w-6 text-[#AE6B56] hidden md:block mr-2"
+                  className="h-6 w-6 text-primary hidden md:block mr-2"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -70,7 +70,7 @@ const FreeClassSection = () => {
               </li>
               <li className="flex items-start">
                 <svg
-                  className="h-6 w-6 text-[#AE6B56] hidden md:block mr-2"
+                  className="h-6 w-6 text-primary hidden md:block mr-2"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -92,7 +92,7 @@ const FreeClassSection = () => {
             <WhatsAppSectionButton
               text="Escribenos por WhatsApp"
               phoneNumber={process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || ""}
-              className="mt-4"
+              className="mt-4 bg-primary text-secondary hover:bg-primary/80 transition duration-300 ease-in-out cursor-pointer font-semibold"
               icon={
                 <svg
                   className="h-6 w-6"
