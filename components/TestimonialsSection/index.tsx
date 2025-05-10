@@ -31,7 +31,7 @@ const TestimonialsSection = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
           Lo que dicen nuestros estudiantes
         </h2>
-        <div className="w-24 h-1 bg-[#F5CF82] mx-auto mb-4"></div>
+        <div className="w-24 h-1 bg-secondary mx-auto mb-4"></div>
         <p className="text-xl text-white max-w-3xl mx-auto">
           Descubre por qué nuestros estudiantes aman Ritmo y Fuerza Studio y
           cómo hemos transformado sus vidas.
@@ -42,11 +42,11 @@ const TestimonialsSection = () => {
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="bg-[#F5CF82]/20 backdrop-blur-sm p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col"
+            className="bg-secondary/20 backdrop-blur-sm p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col"
           >
             <div className="mb-6">
               {[...Array(testimonial.rating)].map((_, i) => (
-                <span key={i} className="text-[#F5CF82] text-2xl">
+                <span key={i} className="text-secondary text-2xl">
                   ★
                 </span>
               ))}
@@ -56,7 +56,7 @@ const TestimonialsSection = () => {
             </blockquote>
             <div className="mt-auto">
               <div className="flex items-center">
-                <div className="flex-shrink-0 bg-gradient-to-r from-[#F5CF82] to-[#AE6B56] rounded-full w-12 h-12 flex items-center justify-center text-white font-bold">
+                <div className="flex-shrink-0 bg-gradient-to-r from-secondary to-primary rounded-full w-12 h-12 flex items-center justify-center text-white font-bold">
                   {testimonial.name.charAt(0)}
                 </div>
                 <div className="ml-4">

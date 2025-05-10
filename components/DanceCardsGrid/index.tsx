@@ -19,8 +19,8 @@ const DanceCard: React.FC<DanceCardProps> = ({
   size,
 }) => {
   return (
-    <div className="flex flex-col items-center p-6 bg-[#F5CF82]/20 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm mx-4 my-4">
-      <div className="mb-4 p-3 bg-gradient-to-r from-[#AE6B56] to-[#F5CF82] rounded-full text-white">
+    <div className="flex flex-col items-center p-6 bg-secondary/20 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm mx-4 my-4">
+      <div className="mb-4 p-3 bg-gradient-to-r from-primary to-secondary rounded-full text-white">
         {icon ? (
           <div className="h-8 w-8 relative flex items-center justify-center">
             <Image

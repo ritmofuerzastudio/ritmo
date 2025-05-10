@@ -11,7 +11,7 @@ const NavBar = ({ elements }: NavBarProps) => {
         <Link
           key={el.href}
           href={el.href}
-          className="text-base font-bold hover:underline text-[#AE6B56] hover:text-white transition"
+          className="text-base font-bold hover:underline text-primary hover:text-white transition"
         >
           {el.label}
         </Link>

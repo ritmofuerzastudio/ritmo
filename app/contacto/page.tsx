@@ -103,7 +103,7 @@ const ContactPage = () => {
       <main className="flex flex-col">
         <Section
           bgImage={Clases1.src}
-          overlayColor="bg-[#F5CF82]/30"
+          overlayColor="bg-secondary/30"
           contentClassName="flex flex-col items-center justify-center"
         >
           <h1 className="text-4xl md:text-6xl font-semibold text-white text-center uppercase">
@@ -113,23 +113,23 @@ const ContactPage = () => {
             Estamos aquí para ayudarte
           </p>
         </Section>
-        <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+        <div className="bg-primary py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             {/* Encabezado */}
             <div className="text-center mb-12">
-              <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              <h1 className="text-4xl font-bold text-secondary mb-4">
                 Contacto
               </h1>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-xl text-secondary max-w-3xl mx-auto">
                 Estamos aquí para responder tus preguntas. Contáctanos para más
                 información sobre nuestras clases, horarios o cualquier otra
                 consulta.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-1 gap-12">
               {/* Formulario de Contacto */}
-              <div className="bg-white p-8 rounded-xl shadow-lg">
+              <div className="bg-white p-8 rounded-xl shadow-lg hidden">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
                   <Send className="mr-2 text-amber-600" />
                   Envíanos un Mensaje

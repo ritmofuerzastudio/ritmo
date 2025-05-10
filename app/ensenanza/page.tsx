@@ -13,25 +13,25 @@ export default function Clases() {
       <main className="flex flex-col">
         <Section
           bgImage={Clases1.src}
-          overlayColor="bg-[#F5CF82]/30"
+          overlayColor="bg-secondary/30"
           contentClassName="flex flex-col items-center justify-center"
         >
           <h1 className="text-4xl md:text-6xl font-semibold text-white text-center uppercase">
-            Clases
+            Ensenanza
           </h1>
           <p className="mt-2 text-center text-lg md:text-2xl text-white">
             Descubre nuestras clases de baile y kickboxing
           </p>
         </Section>
-        <div className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="py-16 px-4 sm:px-6 lg:px-8 bg-primary">
           <div className="max-w-7xl mx-auto">
-            <h1 className="text-4xl font-bold text-center mb-12 text-gray-900">
+            <h1 className="text-4xl font-bold text-center mb-12 text-secondary">
               Nuestras Clases
             </h1>
 
             {classesData.categories.map((category) => (
               <div key={category.name} className="mb-16">
-                <h2 className="text-2xl font-semibold mb-8 text-gray-800 border-b-2 border-amber-500 pb-2">
+                <h2 className="text-2xl font-semibold mb-8 text-secondary border-b-2 border-amber-500 pb-2">
                   {category.name}
                 </h2>
 
