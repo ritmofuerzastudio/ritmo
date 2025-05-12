@@ -39,7 +39,7 @@ export default function Clases() {
                   {category.classes.map((cls) => (
                     <Link
                       key={cls.id}
-                      href={`/clases#${cls.id}`}
+                      href={`/ensenanza#${cls.id}`}
                       className="group relative block overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 h-96"
                     >
                       {/* Imagen con efecto zoom */}
@@ -47,7 +47,7 @@ export default function Clases() {
                         className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                         style={{ backgroundImage: `url(${cls.image})` }}
                       >
-                        <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-all duration-300" />
+                        <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-all duration-300" />
                       </div>
 
                       {/* Contenido de la tarjeta */}

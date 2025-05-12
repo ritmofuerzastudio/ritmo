@@ -7,7 +7,6 @@ import DanceCardsGrid from "@/components/DanceCardsGrid";
 import InstructorsSection from "@/components/InstructorsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import FreeClassSection from "@/components/FreeClassSection";
-import WhatsAppSectionButton from "@/components/WhatsAppSectionButton";
 import Link from "next/link";
 import hero1 from "@/img/hero1.jpg";
 import hero2 from "@/img/hero2.jpg";

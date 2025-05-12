@@ -7,7 +7,7 @@
           "id": "salsa-cubana",
           "title": "Salsa Cubana",
           "description": "Siente el ritmo de Cuba y domina cada paso con energía y sabor. ¡Diversión garantizada!",
-          "image": "/images/classes/salsa-cubana.svg",
+          "image": "/images/classes/salsacubana.png",
           "duration": "1 hora",
           "level": "Todos los niveles"
         },
@@ -15,7 +15,7 @@
           "id": "bachata",
           "title": "Bachata",
           "description": "Conecta con la pasión y fluidez de este ritmo dominicano. Aprende a moverte con estilo y confianza.",
-          "image": "/images/classes/bachata.svg",
+          "image": "/images/classes/bachata.png",
           "duration": "1 hora",
           "level": "Principiantes/Intermedios"
         },
@@ -23,7 +23,7 @@
           "id": "barre",
           "title": "Barre",
           "description": "Tonifica y esculpe tu cuerpo con esta mezcla de ballet, pilates y fuerza. Elegancia y resistencia en cada movimiento.",
-          "image": "/images/classes/barre.svg",
+          "image": "/images/classes/barre.png",
           "duration": "1 hora",
           "level": "Todos los niveles"
         },
@@ -31,7 +31,7 @@
           "id": "merengue",
           "title": "Merengue",
           "description": "Disfruta el ritmo alegre y contagioso del Caribe. Fácil de aprender, imposible de dejar de bailar.",
-          "image": "/images/classes/merengue.svg",
+          "image": "/images/classes/merengue.png",
           "duration": "1 hora",
           "level": "Todos los niveles"
         },
@@ -39,7 +39,7 @@
           "id": "danza-arabe",
           "title": "Danza Árabe",
           "description": "Explora la elegancia, sensualidad y poder de la danza del vientre con movimientos únicos y expresivos.",
-          "image": "/images/classes/danza-arabe.svg",
+          "image": "/images/classes/danzaarabe.png",
           "duration": "1 hora",
           "level": "Principiantes/Intermedios"
         },
@@ -47,7 +47,7 @@
           "id": "zumba",
           "title": "Zumba",
           "description": "Baila, quema calorías y diviértete con esta clase llena de energía y ritmos latinos. ¡Actívate con alegría!",
-          "image": "/images/classes/zumba.svg",
+          "image": "/images/classes/zumba.png",
           "duration": "1 hora",
           "level": "Todos los niveles"
         }
@@ -60,7 +60,7 @@
           "id": "yoga",
           "title": "Yoga",
           "description": "Equilibra cuerpo y mente. Respira, estira y encuentra tu centro con nuestras sesiones guiadas.",
-          "image": "/images/classes/yoga.svg",
+          "image": "/images/classes/yoga.png",
           "duration": "1 hora",
           "level": "Todos los niveles"
         }
@@ -73,7 +73,7 @@
           "id": "kickboxing",
           "title": "Kickboxing",
           "description": "Libera tu fuerza interior con este entrenamiento de alto impacto que combina cardio, técnica y defensa personal.",
-          "image": "/images/classes/kickboxing.svg",
+          "image": "/images/classes/kickboxing.png",
           "duration": "1 hora",
           "level": "Todos los niveles"
         }
