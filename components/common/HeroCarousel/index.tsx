@@ -6,7 +6,7 @@ import WhatsAppSectionButton from "@/components/WhatsAppSectionButton";
 
 interface Slide {
   imagePath: string;
-  title: string;
+  title: string | React.ReactNode;
   description?: string;
 }
 
@@ -44,7 +44,7 @@ const HeroCarousel: React.FC<HeroCarouselProps> = ({
           >
             <Image
               src={slide.imagePath}
-              alt={slide.title}
+              alt={`Slide ${index + 1}`}
               fill
               className="object-cover"
               priority={index === 0}
