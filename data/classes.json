@@ -17,7 +17,7 @@
           "description": "Conecta con la pasión y fluidez de este ritmo dominicano. Aprende a moverte con estilo y confianza.",
           "image": "/images/classes/bachata.png",
           "duration": "1 hora",
-          "level": "Principiantes/Intermedios"
+          "level": "Todos los niveles"
         },
         {
           "id": "barre",
@@ -41,7 +41,7 @@
           "description": "Explora la elegancia, sensualidad y poder de la danza del vientre con movimientos únicos y expresivos.",
           "image": "/images/classes/danzaarabe.png",
           "duration": "1 hora",
-          "level": "Principiantes/Intermedios"
+          "level": "Todos los niveles"
         },
         {
           "id": "zumba",
