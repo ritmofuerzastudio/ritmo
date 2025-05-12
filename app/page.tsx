@@ -18,9 +18,16 @@ export default function Home() {
   const slides = [
     {
       imagePath: hero1.src,
-      title: "¡Bienvenido a Ritmo y Fuerza Studio!",
+      title: (
+        <>
+          {"Bienvenido a"}
+          <br />
+          {"Ritmo y Fuerza Studio"}
+        </>
+      ),
+
       description:
-        "Donde el arte del baile se encuentra con la potencia del kickboxing.",
+        "Donde el arte del baile se encuentra con la potencia del kickboxing",
     },
     {
       imagePath: hero2.src,
