@@ -71,7 +71,7 @@ const HeroCarousel: React.FC<HeroCarouselProps> = ({
           )}
         </div>
 
-        <div className="animate-fadeIn delay-200 mt-2">
+        <div className="animate-fadeIn delay-200">
           <WhatsAppSectionButton
             text="Contáctanos"
             phoneNumber={whatsappNumber}
