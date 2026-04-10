@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function Breadcrumb({
   category,
   title,
@@ -7,13 +9,13 @@ export function Breadcrumb({
 }) {
   return (
     <nav className="text-sm text-gray-500 mb-4">
-      <a href="/blog" className="hover:underline">
+      <Link href="/blog" className="hover:underline">
         Blog
-      </a>{" "}
+      </Link>{" "}
       /{" "}
-      <a href={`/blog/${category}`} className="hover:underline">
+      <Link href={`/blog?category=${category}`} className="hover:underline">
         {category}
-      </a>{" "}
+      </Link>{" "}
       / <span className="text-black">{title}</span>
     </nav>
   );

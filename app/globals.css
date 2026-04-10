@@ -3,6 +3,8 @@
 @theme {
   --color-primary: #f5cf82;
   --color-secondary: #ae6b56;
+  --font-sans: "Avenir Next", "Segoe UI", sans-serif;
+  --font-mono: "SFMono-Regular", "Consolas", monospace;
 }
 
 @keyframes fadeIn {
@@ -26,4 +28,155 @@
 
 .delay-200 {
   animation-delay: 200ms;
+}
+
+.blog-html {
+  color: #44403c;
+}
+
+.blog-html > * + * {
+  margin-top: 1.5rem;
+}
+
+.blog-html h1,
+.blog-html h2,
+.blog-html h3,
+.blog-html h4 {
+  color: #1c1917;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.blog-html h1 {
+  font-size: 2.5rem;
+}
+
+.blog-html h2 {
+  font-size: 2rem;
+}
+
+.blog-html h3 {
+  font-size: 1.5rem;
+}
+
+.blog-html p,
+.blog-html li {
+  font-size: 1.125rem;
+  line-height: 1.9;
+}
+
+.blog-html ul,
+.blog-html ol {
+  padding-left: 1.5rem;
+}
+
+.blog-html ul {
+  list-style: disc;
+}
+
+.blog-html ol {
+  list-style: decimal;
+}
+
+.blog-html a {
+  color: #ae6b56;
+  text-decoration: underline;
+}
+
+.blog-html blockquote {
+  border-left: 4px solid #ae6b56;
+  padding-left: 1.5rem;
+  color: #57534e;
+  font-style: italic;
+}
+
+.blog-html img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+}
+
+.tiptap-editor {
+  color: #44403c;
+  line-height: 1.8;
+}
+
+.tiptap-editor:focus {
+  outline: none;
+}
+
+.tiptap-editor > * + * {
+  margin-top: 1rem;
+}
+
+.tiptap-editor p {
+  min-height: 1.5rem;
+}
+
+.tiptap-editor h2,
+.tiptap-editor h3 {
+  color: #1c1917;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.tiptap-editor h2 {
+  font-size: 1.875rem;
+}
+
+.tiptap-editor h3 {
+  font-size: 1.5rem;
+}
+
+.tiptap-editor ul,
+.tiptap-editor ol {
+  padding-left: 1.5rem;
+}
+
+.tiptap-editor ul {
+  list-style: disc;
+}
+
+.tiptap-editor ol {
+  list-style: decimal;
+}
+
+.tiptap-editor li + li {
+  margin-top: 0.35rem;
+}
+
+.tiptap-editor blockquote {
+  border-left: 4px solid #ae6b56;
+  margin: 1.25rem 0;
+  padding: 0.5rem 0 0.5rem 1rem;
+  color: #57534e;
+  background: rgba(245, 207, 130, 0.12);
+  border-radius: 0 1rem 1rem 0;
+  font-style: italic;
+}
+
+.tiptap-editor hr {
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid #d6d3d1;
+}
+
+.tiptap-editor a {
+  color: #ae6b56;
+  text-decoration: underline;
+}
+
+.tiptap-editor img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.25rem;
+  margin: 1rem 0;
+}
+
+.tiptap-editor .is-editor-empty:first-child::before {
+  color: #a8a29e;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
 }

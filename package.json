@@ -2,22 +2,38 @@
   "name": "ritmo",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "npm@10.9.2",
+  "engines": {
+    "node": ">=20 <25",
+    "npm": ">=10 <11"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint .",
+    "seed:admin": "node scripts/seed-admin.mjs"
   },
   "dependencies": {
-    "@prisma/client": "^6.6.0",
-    "bcryptjs": "^3.0.2",
+    "@floating-ui/dom": "^1.7.4",
+    "@supabase/ssr": "^0.10.0",
+    "@supabase/supabase-js": "^2.102.1",
+    "@tiptap/extension-bubble-menu": "^3.22.3",
+    "@tiptap/extension-floating-menu": "^3.22.3",
+    "@tiptap/extension-image": "^3.22.3",
+    "@tiptap/extension-link": "^3.22.3",
+    "@tiptap/extension-placeholder": "^3.22.3",
+    "@tiptap/pm": "^3.22.3",
+    "@tiptap/react": "^3.22.3",
+    "@tiptap/starter-kit": "^3.22.3",
     "clsx": "^2.1.1",
+    "dotenv": "^17.4.1",
     "lucide-react": "^0.488.0",
-    "mysql2": "^3.14.0",
-    "next": "15.2.4",
+    "next": "15.2.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "tailwind-merge": "^3.3.0"
+    "tailwind-merge": "^3.3.0",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -27,7 +43,6 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.2.4",
-    "prisma": "^6.6.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
