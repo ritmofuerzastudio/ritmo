@@ -17,7 +17,7 @@ export default function Clases() {
           contentClassName="flex flex-col items-center justify-center"
         >
           <h1 className="text-4xl md:text-6xl font-semibold text-white text-center uppercase">
-            Ensenanza
+            Disciplinas
           </h1>
           <p className="mt-2 text-center text-lg md:text-2xl text-white">
             Descubre nuestras clases de baile y kickboxing
