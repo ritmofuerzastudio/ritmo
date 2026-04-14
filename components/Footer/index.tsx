@@ -19,8 +19,8 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Horarios</h4>
             <ul className="space-y-2 text-primary">
               <li>Lunes a Viernes: 7am - 10pm</li>
-              <li>Sábados: 9am - 6pm</li>
-              <li>Domingos: Cerrado</li>
+              <li>Sábados: 9am - 1pm</li>
+              <li>Domingos: 9am - 1pm</li>
             </ul>
           </div>
 
