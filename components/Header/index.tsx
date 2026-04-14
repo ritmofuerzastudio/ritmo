@@ -9,7 +9,7 @@ import WhatsAppSectionButton from "../WhatsAppSectionButton";
 
 const elements: { label: string; href: string }[] = [
   { label: "Inicio", href: "/" },
-  { label: "Enseñanza", href: "/ensenanza" },
+  { label: "Nuestros servicios", href: "/ensenanza" },
   { label: "Costos", href: "/costos" },
   { label: "Contacto", href: "/contacto" },
 ];
