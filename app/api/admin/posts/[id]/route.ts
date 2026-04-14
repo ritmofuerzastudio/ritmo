@@ -65,8 +65,6 @@ export async function PATCH(
     }
   }
 
-  revalidatePath("/blog");
-  revalidatePath(`/blog/${parsed.slug}`);
   revalidatePath("/admin/posts");
   revalidatePath(`/admin/posts/${id}`);
 

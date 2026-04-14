@@ -23,7 +23,6 @@ export async function createCategoryAction(formData: FormData) {
   }
 
   revalidatePath("/admin/categories");
-  revalidatePath("/blog");
   redirect("/admin/categories?success=created");
 }
 
@@ -44,7 +43,6 @@ export async function updateCategoryAction(id: string, formData: FormData) {
 
   revalidatePath("/admin/categories");
   revalidatePath(`/admin/categories/${id}`);
-  revalidatePath("/blog");
   redirect(`/admin/categories/${id}?success=updated`);
 }
 
@@ -58,6 +56,5 @@ export async function deleteCategoryAction(id: string) {
   }
 
   revalidatePath("/admin/categories");
-  revalidatePath("/blog");
   redirect("/admin/categories?success=deleted");
 }
